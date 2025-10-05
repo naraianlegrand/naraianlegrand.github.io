@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub-domains - Narai Anlegrand</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .subdomains-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            text-align: center;
+        }
+        
+        .subdomains-content {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        
+        .subdomains-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+            color: #1d1d1f;
+        }
+        
+        .subdomains-description {
+            font-size: 21px;
+            color: #6e6e73;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        
+        .coming-soon {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+        }
+        
+        .coming-soon-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+        
+        .coming-soon-icon svg {
+            width: 32px;
+            height: 32px;
+            color: white;
+        }
+        
+        .coming-soon h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        
+        .coming-soon p {
+            color: #6e6e73;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+        
+        .back-link {
+            color: #007aff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 17px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #0056b3;
+        }
+        
+        .back-link svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .subdomains-title {
+                font-size: 36px;
+            }
+            
+            .subdomains-description {
+                font-size: 18px;
+            }
+            
+            .coming-soon {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Narai Anlegrand</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="subdomains.html" class="nav-link active">Sub-domains</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sub-domains Hero Section -->
+    <section class="subdomains-hero">
+        <div class="subdomains-content">
+            <h1 class="subdomains-title">Sub-domains</h1>
+            <p class="subdomains-description">
+                Explore my specialized projects and microsites. Each sub-domain represents a unique aspect of my work in cloud computing and software engineering.
+            </p>
+            
+            <div class="coming-soon">
+                <div class="coming-soon-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+                <h3>Coming Soon</h3>
+                <p>
+                    I'm currently working on several exciting sub-domains that will showcase different aspects of my cloud engineering expertise. 
+                    These will include specialized tools, documentation, and interactive demos.
+                </p>
+            </div>
+            
+            <a href="index.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
